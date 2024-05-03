@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<meta charset="UTF-8">
+			<title>Formulario reservas - Hotel Tenerife Luxury</title>
+			<link rel="stylesheet" href="formulario_hotel.css">
+			
+	</head>
+		
+		
+				
+	<body>
+			<h1> Bienvenido al registro de entrada de viajeros</h1>
+			<h1> Hotel Tenerife Luxury ⭐⭐⭐⭐⭐</h1>
+			<form>
+				
+
+
+				
+					<!-- Campo: Datos del cliente. -->
+					<fieldset>
+					<legend><h2>Datos del cliente</h2></legend>
+					
+					<label>Nombre:</label>
+					<input type="text" name="nombre" size="30" mexlengh="20" placeholder="Escriba su nombre aquí..." required>
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					<label>Primer apellido:</label>
+					<input type="text" name="apellido1" size="30" mexlengh="20" placeholder="Escriba su primer apellido aquí..." required>
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					<label>Segundo apellido:</label>
+					<input type="text" name="apellido2" size="30" mexlengh="20" placeholder="Escriba su segundo apellido aquí..." required>
+					<br><br>
+					<label>Teléfono:</label>
+					<input type="text" name="telefono" size="30" mexlengh="20" placeholder="Escriba su telefono aquí..." required>
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					<label>E-mail:</label>
+					<input type="email" name="email" size="30" mexlengh="20" placeholder="Escriba su e-mail aquí..." required>
+					<br><br>				
+					</fieldset>
+					
+
+
+
+					<!-- Campo: Datos de la estancia. -->
+					<fieldset>
+					<legend><h2>Datos de la estancia</h2></legend>
+					
+					Fecha de entrada: <input type="date">
+					<br><br>
+					Número de noches: <input type="number" name="numNoches" size="30" mexlengh="60" min="1" max="1000" placeholder="Escriba su número de noches" required>
+					<br><br>					
+										
+					<h3>Por favor, seleccione su tipo de habitación:</h3>
+					<input type="radio" id="cama_simple" name="num_camas" value="c_simple">
+					<label for="cama_simple">Cama simple</label><br>
+					<input type="radio" id="cama_doble" name="num_camas" value="c_doble">
+					<label for="cama_doble">Cama doble</label><br>
+					<br>
+					</fieldset>
+					
+
+
+
+					<!-- Campo: Otros servicios. -->
+					<fieldset>
+					<legend><h2>Otros servicios</h2></legend>
+					<h3>Si lo desea, puede elegir entre los siguientes extras para su estancia:</h3>
+					Desayuno:
+					<input type="checkbox" name"Desayuno">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					Almuerzo:			
+					<input type="checkbox" name"Almuerzo">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					Cena:
+					<input type="checkbox" name"Cena">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					Cama supletoria:
+					<input type="checkbox" name"Cama supletoria">
+					</fieldset>					
+							
+
+
+					<!-- Campo: Comentarios y peticiones. -->		
+					<fieldset>
+					<legend><h2>Comentarios y peticiones</h2></legend>
+					<p>Si tiene algun comentario o petición especial no dude en hacernoslo saber:</p>					
+					<textarea name="comentario_del_cliente" rows="6" cols="80">Escriba aquí su comentario...</textarea> 
+					<br><br>
+					</fieldset>
+					
+					
+
+					<!-- Botones de LIMPIAR y ENVIAR. -->					
+					<br>										
+					<button class="button button1" type="reset" onclick="alert('Los datos del formulario han sido borrados correctamente.');">Limpiar formulario</button>
+					<button class="button button2" type="submit" onclick="alert('Su formulario se ha enviado correctamente. ¡Gracias por elegirnos para su estancia en Tenerife!.');">Enviar</button>
+			
+			
+			
+			</form>
+			
+			
+			
+	</body>
+	
+</html>
+
+<!-- Autor: Derimán Tejera Fumero. 1ºDAW LND -->

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de letra del DNI</title>
+</head>
+<body>
+    <!--Aquí comienza la sección de calcular letra del DNI. Se solicita el número al usuario y cuando haga click en "Calcular Letra" debajo mostrará la letra por mensaje.-->
+    <h1>Calculadora de letra del DNI</h1>
+    <p>Introduce tu número de DNI (sin la letra):</p>
+    <input type="text" id="dniInput">
+    <button onclick="calcularLetraDNI()">Calcular Letra</button>
+    <p id="resultadoDNI"></p>
+
+    <!--Aquí comienza la sección de número pares e impares. Se solicita el número al usuario el intervalo y cuando haga click en "Generar Números" debajo mostrará en diferentes secciones el contenido de los arrays.-->
+    <h1>Números Pares e Impares</h1>
+    <h2>Intervalo Elegido</h2>
+    <p>Introduzca el valor mínimo (incluido) del intervalo para generar números aleatorios:</p>
+    <input type="number" id="minimoInput">
+    <p>Introduzca el valor máximo (excluido) del intervalo para generar números aleatorios:</p>
+    <input type="number" id="maximoInput">
+    <button onclick="generarNumeros()">Generar Números</button>
+    <p id="resultadoNumeros"></p>
+    <ul id="numerosPares"></ul>
+    <ul id="numerosImpares"></ul>
+    <!--Aquí llamamos al archivo JavaScript.-->
+    <script src="calcular_dni_2.js"></script>
+</body>
+</html>
+<!--Derimán Tejera Fumero 2DAW Semi B-->

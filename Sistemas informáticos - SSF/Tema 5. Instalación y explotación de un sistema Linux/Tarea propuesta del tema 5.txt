@@ -1,0 +1,102 @@
+Tarea para SI05.
+
+Detalles de la tarea de esta unidad. Enunciado.
+
+Actividad 1.
+
+Instalar Ubuntu en una máquina virtual. Sigue los pasos del Capítulo 2 del contenido principal del tema. Datos:
+Instalar Ubuntu 18.04 LTS de 32 o 64 bits según el equipo que dispongas.
+Disco duro nuevo de 100GB.
+Partición raíz de 50GB
+Partición swap acorde a la RAM puesta
+Nombre de la máquina: SistemasUbuntu
+Nombre de usuario: “tu_nombre” (nombre del alumno) Password: el mismo
+
+Actividad 2.
+Instalar guest adittions.
+Crear el usuario alumno de forma gráfica (Capítulo 3.2)
+
+Actividad 3.
+Los archivos de dispositivos se encuentran en /dev. (estos archivos son los manejadores de dispositivo o drivers) Listar usando ruta absoluta:
+- Los archivos que terminan en e
+- Los archivos que empiezan por c y la tercera letra es una r
+- Todos los discos duros y particiones (tienen la forma sda, sda1, sda2,...,,sdb, sdb1,...)
+
+Actividad 4.
+Lista tu directorio home con ruta absoluta, mostrando ocultos y con los archivos ordenados de menos recientes a más recientes.
+Escribe, además de la captura, el nombre de 3 directorios. ¿Cómo se distinguen?
+
+Actividad 5.
+Iniciar sesiones tty3 y tty4 con siguientes usuarios:
+- Inicia sesión en tty3 como alumno (para ello, pulsas Ctrl derecho + F3)
+- Inicia sesión en tty4 con el usuario “tu_nombre”
+- Sin cerrar sesiones, vuelve a la gráfica (tty2), y pregunta en la terminal, quien está conectado. (Si tiene Ubuntu anterior a 18.04, la gráfica es tty7)
+
+Actividad 6.
+¿Cuántas formas distintas conoces para visualizar el contenido de un archivo? Pruébalas con el archivo /etc/passwd (Este archivo tiene los usuarios del sistema)
+Además, ¿quién es el propietario del archivo /etc/passwd? ¿Y su grupo propietario?
+
+Actividad 7.
+El archivo /etc/shadow tiene las contraseñas de los usuarios cifradas. Es un archivo tan importante, que solo lo puede leer el superusuario.
+Prueba en la sesión de alumno, qué ocurre si intenta leer el archivo tanto sin utilizar sudo como utilizando sudo.
+Igualmente, en la sesión “tu_nombre
+De las 4 opciones, ¿en cuáles puedes leer el archivo?
+
+Actividad 8.
+Cree en tu directorio $HOME un subdirectorio denominado copia. Copia en el subdirectorio copia el archivo /etc/passwd. ¿Quién es ahora el propietario del archivo copiado? ¿y cuál es su grupo?
+
+Actividad 9.
+Crea en tu $HOME, otro subdirectorio con el nombre .oculto
+¿Qué ocurre si listas simplemente con la orden ls -l?
+¿Qué opción debes emplear para verlo?
+
+Actividad 10.
+Desde tu $HOME, con rutas relativas:
+- Copia en el subdirectorio copia el archivo /etc/hosts. Visualiza el contenido del archivo copiado
+- Crea dentro de copia otro directorio llamado subcarpeta.
+- Crea dentro de subcarpeta, 1 fichero con la palabra hola (con direccionamiento, igual que en Windows)
+
+Actividad 11.
+Crea en tu $HOME otra carpeta con el nombre de practica.
+Copia la carpeta entera copia dentro de practica (utiliza ruta absoluta)
+
+Actividad 12.
+Elimina el directorio practica (con ruta absoluta)
+
+Actividad 13.
+Instalar gparted y aptitude con apt-get
+Inicia gparted, para comprobar que arranca.
+(Observación: Si iniciamosun PC con CD de Ubuntu, en "Probar Ubuntu" viene instalado. Sin embargo al instalar Ubuntu, no se instala gparted)
+
+Actividad 14.
+Instalar otro compresor gráfico: 7zip. Ayuda, si instalamos dice que no hay ningún paquete con ese nombre (ver diapositivas, para ver cómo proceder)
+
+Actividad 15.
+Busca en Internet, como se llama el gestor de instalación de paquetes en Linux Suse.
+
+Actividad 16.
+Crea con direccionamientos 2 archivos: listado_etc.txt y noPermisos.txt. El contenido de ambos archivos será el siguiente:
+En listado_etc.txt hay una primera línea que dice “Listado Recursivo del directorio /etc” Después en el mismo fichero, aparece el listado del árbol etc y en formato largo.
+El archivo noPermisos.txt contendrá los posibles errores al realizar el listado.
+
+Criterios de puntuación. Total 10 puntos.
+
+La tarea consta de cinco actividades con la siguiente puntuación (máx. 10 puntos):
+
+    Actividad 1 = 2,25 puntos
+    Actividad 2 = 0,75 puntos
+    Resto de actividades = 0,5 puntos cada una
+
+Recursos necesarios para realizar la Tarea.
+
+Algunos enlaces útiles son:
+
+Ubuntu-es.
+
+Debian.
+
+HispaLinux.
+
+Microsoft Windows.
+
+Apple.

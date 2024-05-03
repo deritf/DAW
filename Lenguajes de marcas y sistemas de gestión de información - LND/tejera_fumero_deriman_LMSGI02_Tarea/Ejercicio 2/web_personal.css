@@ -1,0 +1,94 @@
+
+
+<style>
+
+				html{
+				background-color:Black;				
+				}
+
+				body{
+				background-color:Black;				
+				}
+
+				aside{
+				background-color:#57cc99;
+				width:20%;	
+				height:500px;
+				float: left;
+				}
+
+				header{ 
+				background-color:#22577a;
+				width:80%;
+				height:500px;
+				float: right;
+				text-align: center;
+				font-weight: bold;				
+				}
+
+				nav {
+				background-color:#57cc99;
+				width:20%;
+				font-size: 20px;				
+				}
+
+				section {
+				background-color:#80ed99;
+				width:80%;
+				font-size: 30px;			
+				}
+	
+				nav, section {
+				height:3900px;
+				float: left;
+				}
+
+				footer {
+				background-color:#22577a;
+				font-size: 40px;
+				}
+
+				h1 {
+				font-size: 120px;
+				text-align: center;	
+				color: black;
+				font-weight: bold;
+				}
+				
+				h4 {
+				font-size: 30px;
+				text-align: center;	
+				color: black;
+				font-weight: bold;
+				}
+
+				.destacado {
+				font-size: 40px;
+				text-align: center;					
+				color: black;				
+				}
+								
+				table {
+				border-collapse: collapse;
+				width: 100%;
+				font-size: 20px;
+				}
+
+				th, td {
+				text-align: center;
+				padding: 8px;
+				}
+				
+				tr:nth-child(even) {
+				background-color: #D6EEEE;
+				}
+				
+				.center_img {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				width: 50%;
+				}
+
+</style>
+

@@ -1,0 +1,10 @@
+  <!ELEMENT torneo (participante+)><!--Creo el elemento raíz "torneo", que contendrá el elemento "participante" que aparecerá 1 o mas veces (+).-->
+  <!ATTLIST torneo edicion CDATA #REQUIRED><!--Existe un atributo "edicion" en el elemento "torneo" con poseerá datos de tipo cadena de caracteres.-->
+  <!ATTLIST torneo anteriorGanador CDATA #REQUIRED> <!--Existe un atributo "anteriorGanador" en el elemento "torneo" con poseerá datos de tipo cadena de caracteres.-->
+  <!ELEMENT participante (nombre+, edad+, pais+, cabezaDeSerie?)><!--El elemento "participante" está compuesto a su vez por los elementos: "nombre"(que aparece una o mas veces), "edad" etc... -->
+  <!ATTLIST participante idP ID #REQUIRED><!--Existe un atributo "idP" en el elemento "participante" que es de tipo ID (es único) y además es obligatorio.-->
+  <!ATTLIST participante pareja IDREF #REQUIRED><!--Existe un atributo "pareja" en el elemento "participante" que es de tipo IDREF (ya que hace referencia a un ID ya existente) y además es obligatorio.-->
+  <!ELEMENT nombre (#PCDATA)><!--Existe un elemento "nombre" que poseerá datos de tipo cadena de caracteres.-->
+  <!ELEMENT edad (#PCDATA)><!--Existe un elemento "edad" que poseerá datos de tipo cadena de caracteres.-->
+  <!ELEMENT pais (#PCDATA)><!--Existe un elemento "pais" que poseerá datos de tipo cadena de caracteres.-->
+  <!ELEMENT cabezaDeSerie (#PCDATA)><!--Existe un elemento "cabezaDeSerie" que poseerá datos de tipo cadena de caracteres.-->

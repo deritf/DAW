@@ -1,0 +1,5 @@
+"El número de artistas nacidos antes de 1600 es: ",
+" ",
+for $x in doc("artistas.xml")/artistas
+let $y := $x/artista[number(nacimiento)<1600]
+return count ($y)

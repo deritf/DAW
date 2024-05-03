@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #9999FC;
+    width: 100%;
+    position: relative;
+    min-height: 16vh;
+}
+
+h1 {
+    position: absolute;
+    right: 25vw;
+    top: 4.5vw;
+    font-size: 3vh;
+}
+
+#logo {
+    width: 5.5vw;
+    position: absolute;
+    right: 12vw;
+    top: 2vw;
+}
+
+body {
+    display: flex;
+}
+
+nav {
+    background-color: #81F7F3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 5%;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+nav li {
+    margin-right: 2vw;
+}
+
+nav li a {
+    text-decoration: none;
+    font-size: 2.5vh;
+    font-weight: bold;
+}
+
+.container-main-main-nav {
+    display: flex;
+}
+
+main {
+    background-color: #A2CF9D;
+    width: 80%;
+    min-height: 73vh;
+}
+
+main>p {
+    margin: 0 30px 30px;
+    font-size: 1.5vh;
+}
+
+main>h2 {
+    padding-top: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2.5vh;
+}
+
+aside {
+    background-color: #DFB38F;
+    float: right;
+    width: 20%;
+    position: relative;
+}
+
+table {
+    border: 2px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+th,
+td {
+    border: 1px solid black;
+    text-align: center;
+    font-size: 1.5vh;
+}
+
+table th {
+    height: 50px;
+    font-weight: bold;
+    font-size: 1.8vh;
+}
+
+footer {
+    background-color: #C5EE90;
+    font-size: 1.8vh;
+    display: flex;
+    min-height: 6vh;
+}
+
+footer section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-left {
+    width: 20%;
+}
+
+.footer-center {
+    width: 60%;
+}
+
+.footer-center a {
+    margin: 0 100px;
+    align-items: center;
+}
+
+.footer-right {
+    width: 20%;
+}
+
+/* Autor: Derimán Tejera Fumero. 29/03/2024. CIFP César Manrique 2ºDAW semipresencial. */

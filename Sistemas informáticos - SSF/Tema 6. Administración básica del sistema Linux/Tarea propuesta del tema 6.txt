@@ -1,0 +1,195 @@
+Tarea para SI06.
+
+Detalles de la tarea de esta unidad. Enunciado.
+Ejercicio1. Usuarios y grupos. (Punto 1 de los contenidos).
+
+    Crear las siguientes cuentas de usuario con grupo principal especificado en la tabla.
+    Introduce las contraseñas de los usuarios igual que el nombre.
+
+    Usuario  
+    	
+
+           Grupo principal    
+
+    juana
+    	
+
+    juana
+
+    luis
+    	
+
+    informatico
+
+    orena
+    	
+
+    informatico
+
+    maria
+    	
+
+    vendedor
+
+    angel
+    	
+
+    vendedor
+    Realiza las capturas donde se vea el contenido de los archivos de usuarios, grupos y contraseñas (líneas añadidas al realizar el anterior apartado)
+    Mirando el contenido de las capturas, rellena la columna de la derecha, sustituyendo los nombres por sus GID identificadores de grupo y UID identificador de usuario.
+
+    Grupo(Usuario 1,Usuario 2)     
+    	
+
+       GID(UID,UID)     
+
+    juana(juana)
+
+    informatico(luis, lorena)
+
+    vendedor(maría, angel)
+    	
+
+     
+
+    Comienza una sesión gráfica como juana y crea 3 archivos vacíos llamados factura1, factura2, carta en su $HOME.
+    Ejercicio administración. Se decide que juana va a ser vendedor. Los archivos factura1 y factura2 van a seguir siendo de juana, pero el archivo carta va a ser de luis.
+    SEGUIR LOS PASOS SIGUIENTES: (tienes que ser root)
+    a. Cambiar el grupo principal de juana a vendedor. Se puede hacer por comando o cambiando grupo en fichero directamente.
+
+    b. Mover el archivo carta al directorio $HOME de luis.
+    c. Realizar los cambios necesarios en carta, para que su usuario y grupo propietario sean los adecuados en su nuevo destino.
+    d. Cambiar el grupo propietario al directorio $HOME de juana, de forma que sea del nuevo grupo.
+    e. Borrar el grupo juana, por no tener ya usuarios.
+
+    Grupos secundarios. El usuario luis va a pertenecer al grupo sudo (como grupo secundario)
+    a.  ¿Cómo hacerlo? Se puede hacer de 2 formas, con comando y con fichero.
+    b.  Mostrar línea del grupo sudo en pantalla. Para ello, ejecutar:   cat /etc/group | grep sudo
+
+Ejercicio 2. Dispositivos. (Punto 2 de los contenidos).
+
+Montaje automático de un CD en Ubuntu. Seguir los pasos siguientes:
+
+    Con la máquina virtual de Ubuntu arrancada, ir a dispositivos/disco óptico y seleccionar la iso de la instalación de Windows. (Solo tienes que montarlo en VirtualBox. Después, Linux lo va a reconocer automáticamente igual que Windows)
+    ¿En qué directorio está montado el CD? ¿Cuál es el archivo de dispositivo /dev/........ que lo maneja?
+    Obtén un listado de los archivos del CD. Muestra en pantalla, el contenido de un fichero de texto del CD.
+
+Ejercicio 3. Discos y particiones. (Punto 3 de los contenidos).
+
+Crear una partición en disco duro con fdisk y montarla siempre en /mnt/Datos. Para ello, seguir los siguientes pasos:
+
+    Mostrar particiones actuales del disco con fdisk
+    Crear con fdisk una partición lógica de 10GB en espacio libre de tu Ubuntu.
+    Previamente, tendrás que crear extendida. Crea la extendida con todo el espacio libre.
+    Reinicia la máquina.
+    Formatear la nueva partición como ext4.
+    Montar la partición con comando mount en /mnt/Datos Comprobad que se puede escribir.
+    ¿Al reiniciar se tiene acceso a /mnt/Datos? Haced lo necesario, para que siempre se tenga acceso al reiniciar el equipo.
+
+Ejercicio 4. Permisos. (Punto 4 de los contenidos).
+Iniciar sesión como luis.
+
+Crear un archivo con el usuario luis, cambiar permisos y ejecutarlo.  PASOS a seguir::
+
+    Iniciar sesión como luis.
+    Crear un script, llamado archivo con el contenido de las 4 líneas siguientes:
+    #!/bin/bash
+    clear
+    touch otroArchivo.txt
+    ls –l
+    Pon una captura de las propiedades de archivo con ls –l
+    Contesta a las siguientes preguntas:
+    ¿Cuál es el usuario propietario y que permisos tiene?
+    ¿Cuál es el grupo propietario y que permisos tiene?
+    ¿Qué permisos tienen el resto?
+    Cambiar con notación octal los permisos para que sean rwx rw r- -
+    Contesta a:
+    ¿Qué usuarios concretos puede ejecutar archivo?
+    ¿Qué usuarios concretos pueden modificar archivo?
+    ¿Qué usuarios concretos pueden leer archivo?
+    Ejecuta archivo. Como en Windows, se ejecuta con su nombre directamente.
+    Con ruta relativa: ./archivo
+    Con ruta absoluta: /home/luis/archivo
+    Observación: En Windows, en ruta relativa no es necesario ./ pero en Linux sí. Eso solo es debido al valor por defecto de la variable PATH en ambos sistemas, que dice donde busca los ejecutables.
+    Por último, realiza el cambio necesario, para que todos los usuarios puedan ejecutar archivo. 
+
+Ejercicio 5. Procesos. (Punto 5 de los contenidos).
+5 pequeños ejercicios de procesos:
+
+    La orden sleep 100 provoca una "pausa del procesador" de 100 segundos. Ejecútala en una terminal. Mientras que se ejecuta, abre otra terminal, descubre el PID de la orden sleep y mata el proceso desde esa nueva terminal.
+    Crear un script y ejecutarlo. Pasos:
+    a. Crear el archivo infinito.sh con el contenido de las 6 líneas siguientes:
+         #!/bin/bash
+         while true
+         do
+         sleep 5
+         echo Han pasado 5 segundos
+         done
+    b. Ejecutar infinito.sh. Mientras que se ejecuta, desde otra terminal, responder:
+        Cuál es el PID de sleep
+        Cuál es el PID del padre del proceso de sleep
+       ¿Cuándo acaba infinito.sh?
+        Finalizar el programa infinito.sh con el comando adecuado
+    Ejecutar yes y ver consumo procesador. Pasos:
+    Para entender que hace yes, ejecuta yes hola. Finaliza el proceso con Ctrl+C.
+    Ejecuta yes hola > archivo.txt
+    Cuando lleve 1 minuto aproximadamente, mira qué porcentaje del procesador está consumiendo este proceso.
+    Mata el proceso con comando, y mira cuanto ocupa archivo.txt (bórrale)
+    Inicia un proceso como root con prioridad -15 y otro con prioridad 15. Haz lo mismo pero como usuario. ¿Hay alguna diferencia?
+    Comienza una consola como usuario no administrador. Ejecuta un proceso que dure tiempo como yes o infinito.sh.
+    ¿Qué prioridad tiene este proceso? ¿Cómo lo averiguas?
+    Utiliza como usuario la orden necesaria para bajar la prioridad.
+    Vuelve a dejar la prioridad como la tenías antes.
+
+Ejercicio 6. Comandos de información y registro. (Punto 6 de los contenidos).
+
+    Responder, ejecutando los comandos necesarios:
+    ¿Qué versión de kernel tienes instalada?
+    ¿Cuáles son las propiedades de tu CPU?
+    Muestra las últimas líneas de tu archivo de registro
+    Responder:
+    a.  Monta en la máquina de Ubuntu, un CD y un pendrive. Mira cuánto espacio tiene cada uno y cuánto hay libre. Da también la información sobre tu partición raíz?
+    b. ¿Cuánto ocupa tu $HOME?
+
+Ejercicio 7. Tareas programadas. (Punto 7 de los contenidos).
+
+Programar una tarea con un script. Pasos a seguir:
+
+    Escribir un script “7.sh” que al ejecutar guarde en “resultado7.txt”:
+    - La fecha y hora actuales (comando date)
+    - La información sobre los sistemas montados
+    - El listado de todos los procesos que se están ejecutando
+    Se tendrá en cuenta, que cada vez que se ejecute el script, se añadirá en el archivo “resultado7.txt” el resultado del script.
+    Realizar una ejecución del script y comprobar la escritura en “resultado7.txt”
+    Programar para que este script se ejecute todas las horas en punto de lunes a viernes.
+
+Criterios de puntuación. Total 10 puntos.
+
+La tarea consta de doce ejercicios con la siguiente puntuación (máx. 10 puntos):
+
+    Ejercicio 1:  3 puntos
+    Ejercicio 2:  0,75 puntos
+    Ejercicio 3:  1 punto
+    Ejercicio 4:  1 punto
+    Ejercicio 5:  2,25 puntos
+    Ejercicio 6:  1 punto
+    Ejercicio 7:  1 punto
+
+Recursos necesarios para realizar la Tarea.
+
+Para realizar la actividad es necesario que utilices la Máquina Virtual o instalación de la unidad anterior.
+
+Procesador de textos (puedes utilizar OpenOffice Writer).
+Consejos y recomendaciones.
+
+ Se puede utilizar Internet para hacer búsquedas de las imágenes necesarias, aunque también pueden ser de producción propia.
+Indicaciones de entrega.
+
+    Se realizará la tarea, redactando los distintos ejercicios en un único documento de procesador de textos, que se subirá al aula virtual.
+    El archivo se nombrará siguiendo las siguientes pautas apellido1_apellido2_nombre_SI06_Tarea. Asegúrate que el nombre no contenga la letra ñ, tildes ni caracteres especiales extraños. Así por ejemplo, la alumna Begoña Sánchez Mañas debe nombrar esta tarea como... sanchez_manas_begona_SI06_Tarea.pdf
+    Se debe subir en pdf, por ser un formato más universal que docx. Para ello:
+    Si utilizas Microsoft Word, pulsar “Guardar como” y seleccionar en tipo “pdf”.
+    Si utilizas LibreOffice Writer, selecciona “Archivo/Exportar como pdf…”
+
+
+

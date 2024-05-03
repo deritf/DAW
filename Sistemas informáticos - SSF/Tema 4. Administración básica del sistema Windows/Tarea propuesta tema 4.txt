@@ -1,0 +1,53 @@
+Tarea UT4.- Administración básica del sistema Windows.
+
+Detalles de la tarea de esta unidad. Enunciado.
+
+    Crea una partición de 5GB en espacio libre del disco con tipo de archivos FAT 32 con el administrador de discos. Pon etiqueta a la partición “Tarea_Tu_Nombre” donde Tu_Nombre es tu nombre propio (0,5 puntos)
+    ¿Se pueden configurar permisos locales en la partición nueva? Di por qué sí o por qué no, y compruébalo. Si no se puede, realiza lo necesario para poderlo hacer (0,75 puntos)
+    Crea la siguiente estructura de carpetas en el raíz de C. Crea primero la carpeta 'Tu_Apellido' (es decir, apellido del alumno) y dentro de ésta: (0,5 puntos)
+    (Ver imagen adjunta de fichero 1.0)
+    Usuarios y grupos
+    Se van a crear 3 grupos (administración, venta y contabilidad), con 2 usuarios cada grupo. Ningún usuario es administrador.
+    Nómbralos, con la inicial del nombre y el primer apellido (por ejemplo: Ignacio Díaz sería idiaz)
+    Nombre de usuarios y grupos:
+    Fernando Cortés, Marina Céspedes (Grupo administracion)
+    Salvador Jiménez, Martín Rodríguez (Grupo venta)
+    Luisa Serrano, Rosa Valle (Grupo contabilidad) (2 puntos)
+    Configura los permisos de cada carpeta para que los grupos de usuarios de cada departamento tengan permisos de lectura y escritura sobre su carpeta del departamento. El grupo administración podrá leer los documentos del departamento ventas. El resto de usuarios no tendrá acceso a carpetas de otros departamentos distintos del suyo (2 puntos)
+    Inicia sesión con diferentes usuarios y comprueba que los permisos configurados son correctos, comprueba específicamente, que en la carpeta venta hay usuarios que pueden escribir, otros que solo pueden leer y otros que ni siquiera pueden leer. (0,5 puntos)
+    Habilita las directivas de contraseña correspondientes para que el sistema guarde registro de las 4 últimas contraseñas de usuario, éstas deben ser complejas, tener una vigencia máxima de 1 mes, una longitud mínima de 10 caracteres y que permita hasta 3 equivocaciones del usuario al iniciar sesión. (1,5 puntos)
+    Configurar en tareas programadas, para que el archivo por lotes creado en el último ejercicio de la tarea SI03 se ejecute todos los días a las 23:50. (0,5 puntos)
+    Configurar para que los usuarios tengan una cuota de usuario de 5GB con aviso a los 3GB (0,6 puntos)
+    Activar la protección del sistema y crear un punto de restauración. (0,5 puntos)
+    Desfragmenta y chequea la unidad donde tengas instalado Windows. (0,5 puntos)
+    Crea un carpeta en el escritorio y llámala:
+    GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}
+
+    Al abrir la carpeta, se tiene acceso a la mayoría de las configuraciones de Windows. A esto se le conoce como modo Dios (GodMode)  (0,15 puntos)
+
+Criterios de puntuación. Total 10 puntos.
+
+La tarea consta de doce ejercicios con la siguiente puntuación (máx. 10 puntos):
+
+    Ejercicios 1, 3, 6, 8, 10 y 11 = 0,5 puntos.
+    Ejercicios 9 = 0.6 puntos.
+    Ejercicios 2 = 0.75 puntos.
+    Ejercicios 4 y 5 = 2 puntos.
+    Ejercicios 7 = 1,5 puntos.
+    Ejercicios 12 = 0.15 puntos.
+
+Recursos necesarios para realizar la Tarea.
+
+Windows 10
+
+Procesador de textos (puedes utilizar OpenOffice Writer).
+Consejos y recomendaciones.
+
+ Se puede utilizar Internet para hacer búsquedas de las imágenes necesarias, aunque también pueden ser de producción propia.
+Indicaciones de entrega.
+
+    Se realizará la tarea, redactando los distintos ejercicios en un único documento de procesador de textos, que se subirá al aula virtual.
+    El archivo se nombrará siguiendo las siguientes pautas apellido1_apellido2_nombre_SI04_Tarea. Asegúrate que el nombre no contenga la letra ñ, tildes ni caracteres especiales extraños. Así por ejemplo, la alumna Begoña Sánchez Mañas debe nombrar esta tarea como... sanchez_manas_begona_SI04_Tarea.pdf
+    Se debe subir en pdf, por ser un formato más universal que docx. Para ello:
+    Si utilizas Microsoft Word, pulsar “Guardar como” y seleccionar en tipo “pdf”.
+    Si utilizas LibreOffice Writer, selecciona “Archivo/Exportar como pdf…”

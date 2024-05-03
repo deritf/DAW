@@ -1,0 +1,67 @@
+Enunciado Tarea BD04 23/24
+Tarea para BD04.
+Detalles de la tarea de esta unidad.
+Enunciado.
+La tarea consiste en realizar consultas en SQL sobre el Sistema de Información en el fichero sql: https://download.oracle.com/oll/tutorials/DBXETutorial/html/module2/les02_load_data_sql.htm
+
+Baja el contenido de ese hipervínculo y guárdalo con el nombre les02_load_data_sql.sql
+Crea una base de datos pluggable, configura su usuario e importa el fichero SQL anterior al esquema del nuevo usuario (Puedes seguir los pasos del vídeo colgado "ORACLE - configuración de servidor y creación de BBDD").
+Mediante ingeniería inversa genera el modelo físico y lógico y analiza la estructura y contenido de la base de datos que has creado.
+Como tarea realiza los siguientes requirimientos en SQL
+
+Obtener los nombres y salarios de los empleados con más de 10000 euros de salario por orden alfabético.
+Obtener el nombre de los empleados cuyo salario es superior al doble de la media de todos los salarios.
+Obtener el 6% del salario de todos los empleados de la región Asia, junto a su email
+Obtener el valor medio de los salarios de los empleados de Europa
+Obtener el último trabajador contratado
+Obtener el último trabajador contratado de cada departamento
+Obtener todos los nombres de trabajos, Job_title, y su region.
+Obtener en orden alfabético los nombres de empleados cuyo salario es inferior al mínimo de los empleados del departamento IT.
+Obtener los nombres de empleados que trabajan en el departamento donde trabaja el empleado de nombre Walsh.
+Obtener los nombres de los empleados cuyo primer apellido empiece por las letras p, q, r, s.
+Obtener los empleados cuyo nombre de pila contenga 'ut'.
+Obtener los nombres de los empleados que viven en la "location" con menos empleados
+Obtener los nombres de los empleados que viven en la "location" con más departametos
+Obtener el nombre del jefe de departamento que tiene mayor salario de entre los jefes de departamento.
+Obtener en orden alfabético los salarios y nombres de los empleados cuyo salario sea superior al 60% del máximo salario de la empresa.
+Obtener en cuántas ciudades distintas trabajan los empleados
+El nombre y apellidos del empleado que más salario cobra
+Obtener las ciudades y número de empleados de aquellas en las que viven más de 3 empleados
+Obtener para cada departamento cuántos empleados trabajan, la suma de sus salarios para aquellos departamentos en los que hay algún empleado cuyo salario es superior a 9000 euros.
+Obtener el departamento que más empleados tiene
+Obtener los nombres de todos los centros (locations) y los departamentos que se ubican en cada uno.
+Obtener el jefe del empleado cuyo salary*commision_pct tiene el menor valor, y es mayor que 10.
+Obtener todos los departamentos existentes en la empresa y los empleados (si los tiene) que pertenecen a él.
+Obtener un listado en el que aparezcan todos los departamentos existentes y los teléfonos y nombres de sus empleados.
+Obtener un listado ordenado alfabéticamente donde aparezcan los nombres de los empleados y a continuación el literal "tiene comisión" si la tiene, y "no tiene comisión" si no la tiene, siendo la comisión el valor que aparece en la columna COMMISSION_PCT de la tabla EMPLOYEES.
+En qué país se tiene registro de del primer trabajo (job_history).
+¿Cuál es el empleado que más tiempo ha trabajado en la empresa?
+¿A qué números de teléfono tengo que llamar, si quiero que todos los compañeros que trabajan junto (en su misma localización) a Britney le preparen una fiesta sorpresa?
+Obtén la lista de todos los trabajadores de la empresa junto a la siguiente comisión para celebrar el cumpleaños de Britney:
+Si lleva entre 1 y 5 años, se le dará 100 euros
+Si lleva entre 6 y 10 años, se le dará 50 euros por año
+Si lleva entre 11 y 20 años, se le dará 70 euros por año
+Si lleva más de 21 años, se le dará 100 euros por año
+Obtener a los nombres, apellidos, email, teléfono, fecha de contratación y código postal de los empleados que no son jefes de departamento.
+Criterios de puntuación. Total 10 puntos.
+Todos los apartados tienen la misma puntuación. Se valorará además, la presentación del documento elaborado. 0,33 puntos cada respuesta correcta, para un total de 10 puntos.
+Recursos necesarios para realizar la Tarea.
+El script del enunciado para crear el esquema y probar las sentencias
+
+Oracle xe 21c
+
+SQLDeveloper y/o sqlplus
+
+Consejos y recomendaciones.
+Prueba todos los ejercicios. Puedes escribirlos en la hoja de trabajo de SQLDeveloper o directamente en SQLPlus. Comprueba que los resultados son los correctos en función de los datos.
+
+Indicaciones de entrega.
+Una vez realizada la tarea elaborarás un único documento donde figuren las respuestas correspondientes. El envío se realizará a través de la plataforma de la forma establecida para ello, y el archivo se nombrará siguiendo las siguientes pautas:
+
+apellido1_apellido2_nombre_SIGxx_Tarea
+
+ 
+
+Asegúrate que el nombre no contenga la letra ñ, tildes ni caracteres especiales extraños. Así por ejemplo la alumna Begoña Sánchez Mañas para la cuarta unidad del MP de BD, debería nombrar esta tarea como...
+
+sanchez_manas_begona_BD04_Tarea
