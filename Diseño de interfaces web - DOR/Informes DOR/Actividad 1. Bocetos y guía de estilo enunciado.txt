@@ -1,0 +1,25 @@
+Actividad 1 - Boceto y Guía de estilo
+Requisitos de finalización
+Apertura: jueves, 8 de febrero de 2024, 00:00
+Cierre: jueves, 22 de febrero de 2024, 19:10
+Debemos de pensar en la idea de un proyecto a realizar para comenzar con el boceto y la guía de estilo de lo que será en posteriores actividades, el desarrollo de nuestra interfaz web.
+
+Realizar una clasificación de todos los elementos de los que vaya a constar nuestra interfaz web: 
+Identificación.
+Navegación.
+Contenido.
+Interacción.
+Indica cuál es el tipo de estructura de navegación más adecuado y explica el motivo. Lineal, reticular, jerárquica, lineal - jerárquica.
+Elabora una guía de estilo indicando toda la información que consideres relevante al diseño de la web, que servirá como base y consulta para el equipo de desarrollo de la misma. En la guía de estilo debe figurar:
+Fotos y logos: tamaño y formato del conjunto de imágenes que pondríamos en la web (ej: tamaño de fotos de servicios o productos que ofrece la web, tamaño de foto de ubicación, tamaño de fotos en slider de animación,...) serán tamaño aproximados.
+Tipografía: tipo, tamaño, aspecto fuente (negrita, cursiva,...). Detallamos la distinta tipografía para elementos de interacción (ej cambiar idioma, buscar...), elementos de navegación (items del menú), texto de información de contenidos,...
+Colores: fuente, fondo. Detallamos los colores de fuente y fondo en elementos de interacción, navegación, información de productos o servicios, información de contacto,...El color de fondo de la web, color de zonas de fondo como encabezado, pie,...distintas áreas. 
+Iconografía: especificar si vamos a poner iconos y una breve descripción y significado del icono.
+Estructuras: diseñamos al menos dos bocetos:
+Boceto 1: será el boceto de la página principal y por ejemplo de página de contacto y mapa de sitio,...o como consideren.
+Boceto 2: será el boceto que se aplica al elegir cada uno de los items del menú. (secciones)
+Para realizar el boceto se dividirá en tablas o recuadros representando las distintas secciones o áreas. Posteriormente se enumerará cada elemento dentro de esas áreas o secciones y a continuación se detallará lo que representa. 
+Ejemplo: 1 - Zona de logo empresa, 2 - zona imagen decorativa, 3 - zona contenido, 4 - zona fondo página navegador, 5 - Idiomas, 6 - buscar, 7 - mapa sitio, 8 - copyright, ...
+Tamaños: Hay que especificar tamaños aproximados dentro de la web y si el texto irá centrado horizontal o verticalmente.
+Comportamiento: Cómo se comportará la web. Ejemplos: el encabezado permanecerá visible en todo momento, el elemento número 3 en el boceto variará según el item seleccionado.
+Entregar documento en formato pdf obligatorio
