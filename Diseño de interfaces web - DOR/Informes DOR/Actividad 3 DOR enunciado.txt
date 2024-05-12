@@ -1,0 +1,35 @@
+Actividad 3 - Accesibilidad y Usabilidad Web
+Requisitos de finalización
+Apertura: jueves, 29 de febrero de 2024, 19:10
+Cierre: jueves, 7 de marzo de 2024, 19:10
+Recursos aportados:
+
+Con Internet Archive (https://archive.org/) puedes ver cómo era una web años anteriores. 
+
+En JuicyStudio (http://juicystudio.com/services/readability.php) dispones de una herramienta gratuita que permite dada una URL de un sitio web te proporciona índices de legibilidad sobre la base de algunos algoritmos de evaluación legibilidad populares. 
+Test de Legibilidad
+
+La legibilidad depende de estas consideraciones:
+
+Facilidad de comprensión: ¿Es el contenido fácil de entender e internalizar? ¿Son las palabras utilizadas familiares para el usuario medio de Internet o son demasiado complejas y poco comunes? ¿Son las frases y los párrafos lo más concisas posible?
+La legibilidad: ¿Son las fuentes lo suficientemente grande? ¿Hay suficiente contraste entre el texto y el fondo?
+Disfrute de la lectura: ¿Disfrutarán los usuarios de los contenidos? ¿Es la información precisa, de alta calidad y bien escrita? ¿Los características de la fuente empleada como el tamaño, el espaciado y el color hacen que la lectura de los textos sean más fácil de leer o no se esfuercen los ojos?
+Test de Velocidad
+
+Las consideraciones para la evaluación de la velocidad de un sitio web son:
+
+Tiempo de Respuesta Página web: ¿Cuánto (en unidades de tiempo, tales como milisegundos) se tarda en cargar toda una página web?
+Página web Tamaño: ¿Qué tan grande es la página web, en términos de tamaño de archivo?
+Calidad del Código: En cuanto a la codificación, ¿tiene las mejores prácticas de desarrollo web para el rendimiento del sitio web?
+Actividad:
+Para las siguientes actividades se deberá generar un documento PDF en el que, una vez elegidas al menos 3 Webs, realizaremos diversos test de Usabilidad.
+
+Usa una herramienta para testear la Legibilidad y probarla indicando las URLs de las Webs escogidas. Fíjate que para cada algoritmo implementado, se tiene un valor numérico distinto (Gunning Fog Index, Flesch Reading Ease y Flesch-Kincaid Grade) para indicar que la Web es legible. El valor de Flesch Reading Ease debe estar entre un 60 - 70 % para que el texto sea legible. Se espera que una de las webs tenga valor aproximado al 60-70%, otro sea un valor pésimo y otra un valor intermedio.
+
+Con las 3 webs anteriores di cuál fue la primera versión de la web, cuál ha sido la última y cuántas actualizaciones ha tenido. Muestra capturas y haz los comentarios que consideres oportunos sobre el aspecto visual que aprecias de diferencia entre ambas.
+La herramienta BrowserStack nos sirve también para comprobar el aspecto de nuestra Web con distintos sistemas operativos (incluidos los de dispositivos móviles) y distintos navegadores. Además de poder testear Webs que estén disponibles en Internet, también sirve para comprobar páginas locales (que estén en nuestro disco duro). Comprueba con esta herramienta las Webs elegidas su aspecto en distintos SO, distintos navegadores  y distintos dispositivos. Comenta los errores que aprecies de las 3 páginas webs.
+Evalúe los tiempos de descarga de los sitios Web utilizando los servicios facilitados en los siguientes sitios: 
+http://tools.pingdom.com/fpt/
+http://www.websiteoptimization.com/services/analyze
+https://developers.google.com/speed/pagespeed/insights/?hl=es 
+      El uso de este servicio es muy simple, solo se necesita facilitar la referencia del sitio Web que desea analizar y facilitar que se lleven a cabo los cálculos. Comenta lo mostrado en el apartado "Analysis and Recommendations" de websiteoptimization sobre las 3 webs que estás estudiando.
