@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+nav ul {
+    font-size: 0.6rem;
+    list-style-type: none;
+    background-color: #00264e;
+    display: flex;
+}
+
+nav ul li {
+    display: inline-flex;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 40px;
+    transition: background-color 3000ms ease;
+    border-right: 0.5px solid #ffffff;
+}
+
+nav ul li ul li a {
+    color: #000000;
+}
+
+nav ul li:hover>a {
+    background-color: #426181;
+    color: white;
+    transition: background-color 1000ms ease;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 130%;
+    background-color: #cccccc;
+}
+
+nav ul ul li {
+    display: block;
+}
+
+nav ul li ul li ul {
+    background-color: #888888;
+}
+
+nav ul li:hover>ul {
+    display: block;
+}
+
+nav ul ul ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+/* Autor: Derimán Tejera Fumero. 12/04/2024. CIFP César Manrique 2ºDAW semipresencial. */
