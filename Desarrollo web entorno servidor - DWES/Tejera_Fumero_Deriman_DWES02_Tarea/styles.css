@@ -1,0 +1,121 @@
+body {
+  background-color: #fa8072;
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  width: 40%;
+}
+
+fieldset {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-color: white;
+}
+
+#parte-formulario-2 {
+  position: relative;
+}
+
+#parte-formulario-2 input {
+  position: absolute;
+  right: 10vw;
+}
+
+ul {
+  padding-left: 0;
+}
+
+body form legend {
+  font-size: 1.3rem;
+}
+
+body form fieldset input {
+  border-radius: 4px;
+  border: none;
+  padding: 5px;
+  width: 16vw;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  cursor: pointer;
+}
+
+.mensaje-esquina-superior-izquierda {
+  font-size: 1.5rem;
+  color: white;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.nombre,
+.telefono {
+  color: blue;
+  margin-right: 20px;
+}
+
+.letras-azules {
+  color: blue;
+  list-style-type: none;
+  text-align: left;
+}
+
+body form button {
+  padding: 5px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+#etiqueta-negrita-y-azul {
+  font-size: 1rem;
+  font-weight: bold;
+  color: blue;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.btn-anadir-contacto {
+  background-color: #fff;
+  color: blue;
+}
+
+.btn-limpiar-campos {
+  background-color: #fff;
+  color: green;
+}
+
+.btn-vaciar {
+  background-color: #fff;
+  color: red;
+}
+
+.btn-anadir-contacto:hover {
+  background-color: blue;
+  color: #fff;
+}
+
+.btn-limpiar-campos:hover {
+  background-color: green;
+  color: #fff;
+}
+
+.btn-vaciar:hover {
+  background-color: red;
+  color: #fff;
+}
