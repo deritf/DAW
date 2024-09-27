@@ -21,7 +21,7 @@ Este repositorio contiene las tareas, proyectos y otras actividades realizadas p
 
 ## Tercer año
 
-- Desarrollo web entorno servidor -> No cursada aún.
-- Empresa e iniciativa emprendedora -> No cursada aún.
-- Despliegue de aplicaciones web -> No cursada aún.
+- Desarrollo web entorno servidor - DWES -> No cursada aún.
+- Empresa e iniciativa emprendedora -> Convalidada.
+- Despliegue de aplicaciones web - DPL -> No cursada aún.
 - Proyecto final de ciclo superior -> No cursada aún.
