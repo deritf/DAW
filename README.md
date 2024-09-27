@@ -17,11 +17,11 @@ Este repositorio contiene las tareas, proyectos y otras actividades realizadas p
 - [Bases de datos - BAE](https://github.com/deritf/DAW/tree/main/Bases%20de%20datos%20-%20BAE)
 - [Desarrollo web en entorno cliente - DEW](https://github.com/deritf/DAW/tree/main/Desarrollo%20web%20en%20entorno%20cliente%20-%20DEW)
 - [Diseño de interfaces web - DOR](https://github.com/deritf/DAW/tree/main/Dise%C3%B1o%20de%20interfaces%20web%20-%20DOR)
-- Lengua extranjera (Inglés) - LNT -> Sin contenido.
+- Lengua extranjera (Inglés) - LNT -> Sin contenido relevante que mostrar.
 
 ## Tercer año
 
-- Desarrollo web entorno servidor - DWES -> No cursada aún.
+- [Desarrollo web entorno servidor - DWES](https://github.com/deritf/DAW/tree/main/Desarrollo%20web%20entorno%20servidor%20-%20DWES)
 - Empresa e iniciativa emprendedora -> Convalidada.
-- Despliegue de aplicaciones web - DPL -> No cursada aún.
+- [Despliegue de aplicaciones web - DPL](https://github.com/deritf/DAW/tree/main/Despliegue%20de%20aplicaciones%20web%20-%20DPL)
 - Proyecto final de ciclo superior -> No cursada aún.
