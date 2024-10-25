@@ -1,0 +1,77 @@
+body {
+    background-color: #FF8A65 !important;
+}
+
+/*---------- Estilos del archivo: fcrear.php ----------*/
+#fcrear .form-control {
+    margin-bottom: 15px;
+}
+
+#fcrear .btn {
+    margin-right: 10px;
+}
+
+#fcrear .button-group {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/*---------- Estilos del archivo: listaJugadores.php ----------*/
+#listaJugadores .table {
+    border-collapse: collapse;
+    width: 100%;
+    border-spacing: 0;
+    border-spacing: 0;
+}
+
+#listaJugadores .table th,
+#listaJugadores .table td {
+    border: none;
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+    border-collapse: collapse;
+}
+
+#listaJugadores .table thead {
+    background-color: #343A40;
+    color: white;
+    text-align: center;
+}
+
+#listaJugadores .table tbody tr:nth-child(odd) {
+    background-color: #3E444A;
+    color: white;
+    text-align: center;
+}
+
+#listaJugadores .table tbody tr:nth-child(even) {
+    background-color: #343A40;
+    color: white;
+    text-align: center;
+}
+
+#listaJugadores .table tbody tr:hover {
+    background-color: white;
+    color: black;
+}
+
+#listaJugadores .table .barcode {
+    font-family: "Libre Barcode 128", cursive;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/*---------- Estilos del archivo: instalacion.php ----------*/
+#instalacion .container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#instalacion .install-btn {
+    font-size: 1.5rem;
+    padding: 15px 30px;
+}

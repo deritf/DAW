@@ -1,0 +1,26 @@
+{
+    "name": "futbolapp/gestorjugadores",
+    "description": "Un programa relacionado con la práctica del tema 5 de la asignatura de 3o de CFGS DAW, DWES.",
+    "type": "project",
+    "require": {
+        "fakerphp/faker": "^1.9",
+        "picqer/php-barcode-generator": "^2.2",
+        "jenssegers/blade": "^1.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Futbolapp\\Gestorjugadores\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dasdf Texe",
+            "email": "deritejera@gmail.com"
+        }
+    ],
+    "config": {
+        "platform": {
+            "php": "8.2.4"
+        }
+    }
+}
