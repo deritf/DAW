@@ -1,0 +1,2 @@
+Colocar la carpeta "realizandoejercicio6v2" en la carpeta C:\xampp\htdocs. 
+No modificar nombre de la carpeta ya que hay muchas URL que buscar un archivo con ese nombre y podría no funcionar si se cambia.

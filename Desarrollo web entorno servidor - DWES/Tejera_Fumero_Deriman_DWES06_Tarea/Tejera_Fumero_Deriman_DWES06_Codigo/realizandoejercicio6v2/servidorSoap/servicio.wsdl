@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://localhost/realizandoejercicio6v2/servidorSoap" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap-enc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="Clases.Operaciones" targetNamespace="http://localhost/realizandoejercicio6v2/servidorSoap">
+  <types>
+    <xsd:schema targetNamespace="http://localhost/realizandoejercicio6v2/servidorSoap">
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+    </xsd:schema>
+  </types>
+
+  <message name="getPVPIn">
+    <part name="id" type="xsd:anyType"/>
+  </message>
+  <message name="getPVPResponse">
+    <part name="return" type="xsd:anyType"/>
+  </message>
+
+  <message name="getStockIn">
+    <part name="producto" type="xsd:anyType"/>
+    <part name="tienda" type="xsd:anyType"/>
+  </message>
+  <message name="getStockResponse">
+    <part name="return" type="xsd:anyType"/>
+  </message>
+
+  <message name="getFamiliasIn"/>
+  <message name="getFamiliasResponse">
+    <part name="return" type="xsd:anyType"/>
+  </message>
+
+  <message name="getProductosFamiliaIn">
+    <part name="codFamilia" type="xsd:anyType"/>
+  </message>
+  <message name="getProductosFamiliaResponse">
+    <part name="return" type="xsd:anyType"/>
+  </message>
+
+  <portType name="Clases.OperacionesPort">
+    <operation name="getPVP">
+      <input message="tns:getPVPIn"/>
+      <output message="tns:getPVPResponse"/>
+    </operation>
+    <operation name="getStock">
+      <input message="tns:getStockIn"/>
+      <output message="tns:getStockResponse"/>
+    </operation>
+    <operation name="getFamilias">
+      <input message="tns:getFamiliasIn"/>
+      <output message="tns:getFamiliasResponse"/>
+    </operation>
+    <operation name="getProductosFamilia">
+      <input message="tns:getProductosFamiliaIn"/>
+      <output message="tns:getProductosFamiliaResponse"/>
+    </operation>
+  </portType>
+
+  <binding name="Clases.OperacionesBinding" type="tns:Clases.OperacionesPort">
+    <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="getPVP">
+      <soap:operation soapAction="http://localhost/realizandoejercicio6v2/servidorSoap#getPVP"/>
+      <input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/realizandoejercicio6v2/servidorSoap"/>
+      </input>
+      <output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/realizandoejercicio6v2/servidorSoap"/>
+      </output>
+    </operation>
+    <operation name="getStock">
+      <soap:operation soapAction="http://localhost/realizandoejercicio6v2/servidorSoap#getStock"/>
+      <input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/realizandoejercicio6v2/servidorSoap"/>
+      </input>
+      <output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/realizandoejercicio6v2/servidorSoap"/>
+      </output>
+    </operation>
+    <operation name="getFamilias">
+      <soap:operation soapAction="http://localhost/realizandoejercicio6v2/servidorSoap#getFamilias"/>
+      <input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/realizandoejercicio6v2/servidorSoap"/>
+      </input>
+      <output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/realizandoejercicio6v2/servidorSoap"/>
+      </output>
+    </operation>
+    <operation name="getProductosFamilia">
+      <soap:operation soapAction="http://localhost/realizandoejercicio6v2/servidorSoap#getProductosFamilia"/>
+      <input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/realizandoejercicio6v2/servidorSoap"/>
+      </input>
+      <output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/realizandoejercicio6v2/servidorSoap"/>
+      </output>
+    </operation>
+  </binding>
+
+  <service name="Clases.OperacionesService">
+    <port name="Clases.OperacionesPort" binding="tns:Clases.OperacionesBinding">
+      <soap:address location="http://localhost/realizandoejercicio6v2/servidorSoap/servicioW.php"/>
+    </port>
+  </service>
+</definitions>
